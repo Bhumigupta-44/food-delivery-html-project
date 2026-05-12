@@ -10,3 +10,88 @@
    font-family: "Roboto Condensed", sans-serif;
 
 }
+:root{
+  --lead: #212121;
+  --gold-finger: #F2BD12;
+  --eye-ball:#FFFDF7;
+  --hint-yellow: #FCF1CC;
+  --pure-white: #FFF;
+
+}
+body{
+  backgroungd: var(--eye-ball);
+}
+/* Basic styling */
+
+
+
+
+
+
+
+
+
+/* Header Styling */
+
+
+
+
+
+
+
+/* Sections Styling */
+
+
+
+
+
+
+/* Footer Styling */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Queries */
+
