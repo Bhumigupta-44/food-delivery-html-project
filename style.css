@@ -22,7 +22,33 @@ body{
   backgroungd: var(--eye-ball);
 }
 /* Basic styling */
+a{
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: var(--lead);
+}
 
+.flex{
+  display:flex;
+  align-items: centre;
+
+}
+li{
+  list-style: none;
+}
+.between{
+  justify-content: space-between;
+
+}
+.gap-3{
+  gap: 3rem;
+}
+
+.wrapper{
+  max-width:1400px;
+  background: gold;
+  margin :auto;
+}
 
 
 
@@ -32,6 +58,9 @@ body{
 
 
 /* Header Styling */
+.navbar{
+  min-height: 14vh;
+}
 
 
 
