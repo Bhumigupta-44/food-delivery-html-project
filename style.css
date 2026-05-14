@@ -22,6 +22,8 @@ body{
   backgroungd: var(--eye-ball);
 }
 /* Basic styling */
+
+/* For removing underline below the links and changing its color to black */
 a{
   font-size: 1.1rem;
   text-decoration: none;
@@ -33,33 +35,43 @@ a{
   align-items: centre;
 
 }
+/* for removing . in frot of the links */
 li{
   list-style: none;
 }
+/* placing the links in between the window */
 .between{
   justify-content: space-between;
 
 }
+/* gap between links */
 .gap-3{
   gap: 3rem;
 }
-
+/* for proper alignment */
 .wrapper{
   max-width:1400px;
-  background: gold;
   margin :auto;
+  padding-inline:1.5re m;
 }
 
 
 
-
+ 
 
 
 
 
 /* Header Styling */
+/* for mainting the links little below the screen  */
 .navbar{
   min-height: 14vh;
+}
+.logo{
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--gold-finger);
+
 }
 
 
