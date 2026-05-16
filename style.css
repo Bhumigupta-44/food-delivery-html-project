@@ -19,7 +19,7 @@
 
 }
 body{
-  backgroungd: var(--eye-ball);
+  background: var(--eye-ball);
 }
 /* Basic styling */
 
@@ -32,7 +32,7 @@ a{
 
 .flex{
   display:flex;
-  align-items: centre;
+  align-items: center;
 
 }
 /* for removing . in frot of the links */
@@ -43,6 +43,10 @@ li{
 .between{
   justify-content: space-between;
 
+} 
+
+.gap-2{
+  gap: 2rem;
 }
 /* gap between links */
 .gap-3{
@@ -52,7 +56,7 @@ li{
 .wrapper{
   max-width:1400px;
   margin :auto;
-  padding-inline:1.5re m;
+  padding-inline:1.5rem;
 }
 
 
@@ -66,6 +70,7 @@ li{
 /* for mainting the links little below the screen  */
 .navbar{
   min-height: 14vh;
+   padding-block: 1rem;
 }
 .logo{
   font-size: 2rem;
@@ -73,7 +78,50 @@ li{
   color: var(--gold-finger);
 
 }
+.btn{
+  display: inline-block;
+  padding: .9rem 2rem;
+  background:var(--gold-finger);
+  border-radius: 1rem;
+  font-size: 1.1rem;
+  color: var(--pure-white); 
+  /* above line is for making color of sign in white */
+  box-shadow: rgba(0, 0, 0, 0.185) 0 2px 1px
+}
+/* changing button color on hovering */
+.btn:hover{
+  background: var(--lead);
+}
+.cart-icon{
+  color: var(--lead);
+  font-size: 1.3rem;
+  position : relative;
+  
+}
 
+
+.cart-value{
+  position: absolute;
+  top: -8px;
+  right:-10px;
+
+  font-size: .85rem;
+  width: 20px;
+  aspect-ratio: 1;
+  border-radius: 100vw;
+  background : var(--gold-finger);
+  color: var(--lead);
+  text-align: center;
+  line-height: 20px;
+}
+ .desktop-action .hamburger{
+  font-size: 1.5rem;
+  display: none;
+ }
+
+ .mobile-menu{
+  display: none;
+ }
 
 
 
@@ -135,4 +183,40 @@ li{
 
 
 /* Media Queries */
+/* To remove the icon of links like Home,Contacts from mobile screen */
+@media screen and (max-width : 780px){
+  .navlist{
+    display :none !important;
+  }
+  .desktop-action .btn{
+    display:  none;
+  }
+/*  for showing that 3 lines hamburger along with Foodie and cart icon */
+  .desktop-action .hamburger{
+    display: block;
+
+  }
+
+  .mobile-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    gap :2rem;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20rem;
+    padding: 2rem;
+    background: var(--pure-white);
+    border : .1rem solid var(--gold-finger);
+
+  }
+
+  
+
+}
+
+
 
