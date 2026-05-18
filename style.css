@@ -96,7 +96,8 @@ img{
   font-size: 1.1rem;
   color: var(--pure-white); 
   /* above line is for making color of sign in white */
-  box-shadow: rgba(0, 0, 0, 0.185) 0 2px 1px
+  box-shadow: rgba(0, 0, 0, 0.185) 0 2px 1px;
+  transition: .3s ease-in-out;
 }
 /* changing button color on hovering */
 .btn:hover{
@@ -167,7 +168,19 @@ p{
 }
 .para{
   margin-block: 2rem;
-  max-width:
+  max-width: 550px;
+
+}
+
+.social-icon{
+  background: var(--hint-yellow);
+  width: 3rem;
+  aspect-ratio: 1;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 3rem;
+  box-shadow: rgba(0, 0, 0, 0.185) 0 2px 1px;
 
 }
 
