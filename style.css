@@ -34,6 +34,7 @@ a{
 .flex{
   display:flex;
   align-items: center;
+  flex-wrap: wrap;
 
 }
 /* for removing . in frot of the links */
@@ -150,6 +151,7 @@ img{
 .content,
 .image-container{
   flex: 1;
+  flex-basis: 300px;
 
 }
 h1{
@@ -181,7 +183,12 @@ p{
   text-align: center;
   line-height: 3rem;
   box-shadow: rgba(0, 0, 0, 0.185) 0 2px 1px;
+  transition :.3s ease-in-out;
 
+}
+.social-icon:hover{
+  background: var(--lead);
+  color: var(--pure-white);
 }
 
 
@@ -239,6 +246,9 @@ p{
 /* Media Queries */
 /* To remove the icon of links like Home,Contacts from mobile screen */
 @media screen and (max-width : 780px){
+
+  /* HEADER STYLING */
+
   .navlist{
     display :none !important;
   }
@@ -276,6 +286,20 @@ p{
   .mobile-menu-active{
     left: 50%;
     transform: translateX(-50%);
+  }
+
+  /* SECTIONS STYLING */
+  h1{
+    font-size: 3.6rem;
+  }
+  content{
+    padding-top: 3rem;
+  }
+  .gap-2{
+    gap: 1.4rem;
+  }
+  .gap-4{
+    gap: 4rem;
   }
 
 
